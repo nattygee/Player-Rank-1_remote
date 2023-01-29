@@ -9,12 +9,26 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        VStack {
+        HStack {
             // comment here
             Image(systemName: "globe")
                 .imageScale(.large)
                 .foregroundColor(.accentColor)
-            Text("Testing commit")
+                .background(Color.green)
+                
+            VStack {
+                Image("1HC_logo_full-05")
+                    .resizable()
+                    .padding(16)
+                    .aspectRatio(contentMode: .fit)
+                
+                Text("Testing this out")
+                    .fontWeight(.black)
+                    .padding(16)
+                    .background(Color.black)
+                    .foregroundColor(Color.white)
+                    .kerning(/*@START_MENU_TOKEN@*/2.01/*@END_MENU_TOKEN@*/)
+            }
         }
         .padding()
     }
