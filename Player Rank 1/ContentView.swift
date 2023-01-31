@@ -82,7 +82,10 @@ struct ContentView: View {
                             Image("Track")
                             Text("Click this")
                         }
-                    }
+                    }.padding()
+                        .background(.blue)
+                        .foregroundColor(.white)
+                        .cornerRadius(8.0)
 
 //                    Text("Get started")
 //                        .fontWeight(.black)
