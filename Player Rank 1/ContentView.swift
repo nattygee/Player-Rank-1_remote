@@ -75,21 +75,30 @@ struct ContentView: View {
                 
                 // MARK: buttons
                 VStack(spacing: 16.0) {
-                    Text("Get started")
-                        .fontWeight(.black)
-                        .padding(16)
-                        .background(Color.blue)
-                        .foregroundColor(Color.white)
-                        .kerning(/*@START_MENU_TOKEN@*/2.01/*@END_MENU_TOKEN@*/)
-                        .cornerRadius(8.0)
-                    
-                    Text("Maybe next time")
-                        .fontWeight(.black)
-                        .padding(16)
-                        .foregroundColor(Color.blue)
-                        .kerning(/*@START_MENU_TOKEN@*/2.01/*@END_MENU_TOKEN@*/)
-                        .cornerRadius(8.0)
-                    .border(Color.blue, width: 2)
+                    Button {
+                        print("a new way to button")
+                    } label: {
+                        HStack {
+                            Image("Track")
+                            Text("Click this")
+                        }
+                    }
+
+//                    Text("Get started")
+//                        .fontWeight(.black)
+//                        .padding(16)
+//                        .background(Color.blue)
+//                        .foregroundColor(Color.white)
+//                        .kerning(/*@START_MENU_TOKEN@*/2.01/*@END_MENU_TOKEN@*/)
+//                        .cornerRadius(8.0)
+//
+//                    Text("Maybe next time")
+//                        .fontWeight(.black)
+//                        .padding(16)
+//                        .foregroundColor(Color.blue)
+//                        .kerning(/*@START_MENU_TOKEN@*/2.01/*@END_MENU_TOKEN@*/)
+//                        .cornerRadius(8.0)
+//                    .border(Color.blue, width: 2)
                 }
 
             }
