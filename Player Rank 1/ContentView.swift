@@ -8,6 +8,11 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State private var compCard = "blue06"
+    @State private var playerCard = "red04"
+    @State private var compScore = 2
+    @State private var playerScore = 4
+    
     var body: some View {
         VStack {
             HStack {
@@ -29,10 +34,10 @@ struct ContentView: View {
                 
                 // MARK: cards
                 HStack(spacing: 24.0) {
-                    Image("red01")
+                    Image(playerCard)
                         .resizable()
                         .aspectRatio(contentMode: .fit)
-                    Image("blue01")
+                    Image(compCard)
                         .resizable()
                         .aspectRatio(contentMode: .fit)
                 }
@@ -55,7 +60,7 @@ struct ContentView: View {
                             Text("Player")
                                 .textCase(.uppercase)
                                 .padding(.bottom)
-                            Text("0")
+                            Text(String(playerScore))
                                 .font(.largeTitle)
                                 .fontWeight(.black)
                         }
@@ -63,7 +68,7 @@ struct ContentView: View {
                             Text("Computer")
                                 .textCase(.uppercase)
                                 .padding(.bottom)
-                            Text("0")
+                            Text(String(compScore))
                                 .font(.largeTitle)
                                 .fontWeight(.black)
                         }
@@ -76,7 +81,18 @@ struct ContentView: View {
                 // MARK: buttons
                 VStack(spacing: 16.0) {
                     Button {
-                        print("a new way to button")
+                        // generate random number for cards
+                        let userRandNum = Int.random(in: 1...8)
+                        let compRandNum = Int.random(in: 1...8)
+                        
+                        //update card
+                        playerCard = "red0" + String(userRandNum)
+                        compCard = "blue0" + String(compRandNum)
+                        
+                        //update score
+                        playerScore = 3
+                        compScore = 1
+                        
                     } label: {
                         HStack {
                             Image("Track")
