@@ -8,10 +8,11 @@
 import SwiftUI
 
 struct ContentView: View {
-    @State private var compCard = "blue06"
-    @State private var playerCard = "red04"
-    @State private var compScore = 2
-    @State private var playerScore = 4
+    @State private var compCard = "starterCard"
+    @State private var playerCard = "starterCard"
+    @State private var compScore = 0
+    @State private var playerScore = 0
+    
     
     var body: some View {
         VStack {
@@ -79,45 +80,54 @@ struct ContentView: View {
                 Spacer()
                 
                 // MARK: buttons
-                VStack(spacing: 16.0) {
+                HStack(spacing: 16.0) {
                     Button {
                         // generate random number for cards
-                        let userRandNum = Int.random(in: 1...8)
+                        let playerRandNum = Int.random(in: 1...8)
                         let compRandNum = Int.random(in: 1...8)
                         
                         //update card
-                        playerCard = "red0" + String(userRandNum)
+                        playerCard = "red0" + String(playerRandNum)
                         compCard = "blue0" + String(compRandNum)
                         
                         //update score
-                        playerScore = 3
-                        compScore = 1
+                        func calcScore() {
+                            if playerRandNum > compRandNum {
+                                playerScore += 1
+                            } else if compRandNum > playerRandNum {
+                                compScore += 1
+                            } else {
+                                print("it's a tie!")
+                            }
+                        }
                         
+                        calcScore()
                     } label: {
                         HStack {
-                            Image("Track")
-                            Text("Click this")
-                        }
-                    }.padding()
-                        .background(.blue)
-                        .foregroundColor(.white)
+                            Image(systemName: "hand.draw.fill")
+                            Text("Draw cards")
+                        }.padding()
+                    }
+                            .frame(width:160)
+                            .background(.blue)
+                            .foregroundColor(.white)
+                            .cornerRadius(8.0)
+                    
+                    // reset button
+                    Button {
+                        playerScore = 0
+                        compScore = 0
+                        playerCard = "starterCard"
+                        compCard = "starterCard"
+                    } label: {
+                        HStack {
+                            Image(systemName: "x.circle.fill")
+                            Text("Reset scores")
+                        }.padding()
+                    }.frame(width:160)
+                        .border(Color.blue, width: 4)
                         .cornerRadius(8.0)
 
-//                    Text("Get started")
-//                        .fontWeight(.black)
-//                        .padding(16)
-//                        .background(Color.blue)
-//                        .foregroundColor(Color.white)
-//                        .kerning(/*@START_MENU_TOKEN@*/2.01/*@END_MENU_TOKEN@*/)
-//                        .cornerRadius(8.0)
-//
-//                    Text("Maybe next time")
-//                        .fontWeight(.black)
-//                        .padding(16)
-//                        .foregroundColor(Color.blue)
-//                        .kerning(/*@START_MENU_TOKEN@*/2.01/*@END_MENU_TOKEN@*/)
-//                        .cornerRadius(8.0)
-//                    .border(Color.blue, width: 2)
                 }
 
             }
