@@ -17,20 +17,6 @@ struct CardGameView: View {
         NavigationView {
             ZStack {
                 VStack {
-                    HStack {
-                        Image(systemName: "globe")
-                            .imageScale(.large)
-                        .foregroundColor(.accentColor)
-                    
-                    Spacer()
-
-                    Image("1HC_logo_full-05")
-                        .resizable()
-                        .padding(16)
-                        .aspectRatio(contentMode: .fit)
-                        .frame(width: 160, height: 100.0)
-                    } .padding()
-                        
                     VStack {
                         Spacer()
                         
