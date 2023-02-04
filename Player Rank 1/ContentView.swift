@@ -9,11 +9,25 @@ import SwiftUI
 
 struct nextProject: View {
     var body: some View {
-        NavigationView {
-            ZStack {
-                
+        NavigationStack {
+            List {
+                NavigationLink("A blank page") {
+                    Text("Check this page out")
+                }
+                NavigationLink("Another blank page") {
+                    Text("Another page to look at")
+                }
+                NavigationLink("A red card") {
+                    Image("red01")
+                }
+            }.navigationTitle("Next project")
+            List {
+                Section("list view") {
+                    Text("hey")
+                    Text("hey")
+                    Text("hey")
+                }
             }
-            .navigationTitle("Next project")
         }
     }
 }
