@@ -11,7 +11,9 @@ struct NextProjectView: View {
     @State var tapCount = 0
     
     var body: some View {
-        NavigationView {
+
+            NavigationView {
+
             List {
                 NavigationLink("A blank page") {
                     Text("Check this page out")

@@ -19,7 +19,9 @@ struct CardGameView: View {
                 VStack {
                     VStack {
                         Spacer()
-                        
+                        Circle()
+                            .frame(width: 80, height: 80)
+                            .background(Color.red)
                         // MARK: cards
                         HStack(spacing: 24.0) {
                             Image(playerCard)
