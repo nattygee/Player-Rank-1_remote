@@ -23,7 +23,11 @@ struct ContentView: View {
                     Image("tabIcon_nextProj")
                     Text("Next project")
                 }
-
+            ColorTestingView()
+                .tabItem{
+                    Image(systemName: "globe")
+                    Text("Colors")
+                }
         }
     }
 }

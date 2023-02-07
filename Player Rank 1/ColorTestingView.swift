@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct ColorTesting: View {
+struct ColorTestingView: View {
     var body: some View {
         ZStack {
             Color.theme.backgroundColor
@@ -34,22 +34,18 @@ struct ColorTesting: View {
                     .multilineTextAlignment(.trailing)
                     .opacity(0.5)
                 Button {
-                    
+                    print("ohaio")
                 } label: {
-                    Text("Learn more")
-                        .padding()
-                        .foregroundColor(Color.theme.reversedTextColor)
-                        .fontWeight(.bold)
-                }
-                .foregroundColor(Color.theme.primaryTextColor)
-                .cornerRadius(40)
-                .background(Color.theme.accentColor)
-                .padding(2)
-                
-
-                
-                
-                    
+                    HStack {
+                        Image(systemName: "pencil")
+                        Text("Learn more")
+                    }.padding(12.0)
+                }.background(Color.theme.accentColor)
+                    .foregroundColor(Color.theme.reversedTextColor)
+                    .cornerRadius(12)
+                    .font(.title3)
+                    .fontWeight(.bold)
+                    .padding(8.0)    
             Spacer()
             }.padding()
         }
@@ -58,6 +54,6 @@ struct ColorTesting: View {
 
 struct ColorTesting_Previews: PreviewProvider {
     static var previews: some View {
-        ColorTesting()
+        ColorTestingView()
     }
 }
