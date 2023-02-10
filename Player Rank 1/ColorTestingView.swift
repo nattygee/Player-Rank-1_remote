@@ -46,7 +46,9 @@ struct ColorTestingView: View {
                     .font(.title3)
                     .fontWeight(.bold)
                     .padding(8.0)
-            Spacer()
+                Text("This is a paragraph of something i'm writing so I'll just leave it here")
+                    .padding().frame(maxWidth: .infinity).background(Color.theme.secondaryTextColor).foregroundColor(.white)
+                Spacer()
                 HStack {
                     Button("Delete") {
                         
@@ -68,8 +70,6 @@ struct ColorTestingView: View {
                         Text("Click this")
                     }.padding(12.0)
                 }.buttonStyle(PrimaryBtnStyle())
-             
-                Button("Other button") {}.buttonStyle(PrimaryBtnStyle(bgColor: .red, fgColor: .white, font: .body, padding: 12.0))
 
             }.padding()
         }

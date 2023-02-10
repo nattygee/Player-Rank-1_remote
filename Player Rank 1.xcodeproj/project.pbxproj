@@ -18,6 +18,7 @@
 		51563B4E298555970051C2A0 /* Player_Rank_1UITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51563B4D298555970051C2A0 /* Player_Rank_1UITestsLaunchTests.swift */; };
 		5173A359298E7C510010B785 /* NextProjectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5173A358298E7C510010B785 /* NextProjectView.swift */; };
 		5173A35B298E81ED0010B785 /* CardGameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5173A35A298E81ED0010B785 /* CardGameView.swift */; };
+		518B46492996807300F58490 /* TestingViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 518B46482996807300F58490 /* TestingViews.swift */; };
 		51EA1A442995C96400801E0A /* CustomBtnStyles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51EA1A432995C96400801E0A /* CustomBtnStyles.swift */; };
 /* End PBXBuildFile section */
 
@@ -53,6 +54,7 @@
 		51563B4D298555970051C2A0 /* Player_Rank_1UITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player_Rank_1UITestsLaunchTests.swift; sourceTree = "<group>"; };
 		5173A358298E7C510010B785 /* NextProjectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextProjectView.swift; sourceTree = "<group>"; };
 		5173A35A298E81ED0010B785 /* CardGameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardGameView.swift; sourceTree = "<group>"; };
+		518B46482996807300F58490 /* TestingViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestingViews.swift; sourceTree = "<group>"; };
 		51EA1A432995C96400801E0A /* CustomBtnStyles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomBtnStyles.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -114,6 +116,7 @@
 			children = (
 				51563B30298555920051C2A0 /* Player_Rank_1App.swift */,
 				510742DB2991F41500EEE34B /* ColorTestingView.swift */,
+				518B46482996807300F58490 /* TestingViews.swift */,
 				51563B32298555920051C2A0 /* ContentView.swift */,
 				51EA1A432995C96400801E0A /* CustomBtnStyles.swift */,
 				5173A35A298E81ED0010B785 /* CardGameView.swift */,
@@ -281,6 +284,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				510742DC2991F41500EEE34B /* ColorTestingView.swift in Sources */,
+				518B46492996807300F58490 /* TestingViews.swift in Sources */,
 				5173A35B298E81ED0010B785 /* CardGameView.swift in Sources */,
 				51563B33298555920051C2A0 /* ContentView.swift in Sources */,
 				5173A359298E7C510010B785 /* NextProjectView.swift in Sources */,
