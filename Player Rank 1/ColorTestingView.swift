@@ -45,8 +45,32 @@ struct ColorTestingView: View {
                     .cornerRadius(12)
                     .font(.title3)
                     .fontWeight(.bold)
-                    .padding(8.0)    
+                    .padding(8.0)
             Spacer()
+                HStack {
+                    Button("Delete") {
+                        
+                    }.buttonStyle(MultiActionBtnStyle(actionType: .delete))
+                    Spacer()
+                    Button("Cancel") {
+                        
+                    }.buttonStyle(MultiActionBtnStyle(actionType: .cancel))
+                    Button("Confirm") {
+                        
+                    }.buttonStyle(MultiActionBtnStyle(actionType: .confirm))
+                }.padding(12.0)
+            Spacer()
+                Button {
+                    print("hey this worked")
+                } label: {
+                    HStack {
+                        Image(systemName: "target")
+                        Text("Click this")
+                    }.padding(12.0)
+                }.buttonStyle(PrimaryBtnStyle())
+             
+                Button("Other button") {}.buttonStyle(PrimaryBtnStyle(bgColor: .red, fgColor: .white, font: .body, padding: 12.0))
+
             }.padding()
         }
     }
