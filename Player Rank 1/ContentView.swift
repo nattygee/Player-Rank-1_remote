@@ -28,6 +28,10 @@ struct ContentView: View {
                     Image(systemName: "globe")
                     Text("Colors")
                 }
+            TestingViews()
+                .tabItem {
+                    Text("Layouts")
+                }
         }
     }
 }
