@@ -10,15 +10,7 @@ import SwiftUI
 struct TestingViews: View {
     var body: some View {
         ZStack {
-            //Color.theme.backgroundColor.ignoresSafeArea()
             VStack(alignment: .trailing, spacing: 16) {
-                //Image("1HC_logo_full-05")
-                  //  .opacity(0.8)
-                    //.padding(16)
-                    //.background(Color.green.opacity(0.8))
-                    //.background(Color.yellow.opacity(0.3))
-                    //.cornerRadius(12.0)
-                    //.overlay(Image(systemName: "globe").font(.largeTitle).foregroundColor(Color.white))
                 
                 //  BLUE SQUARE STARTS HERE
                 VStack(alignment: .leading, spacing: 8) {
@@ -83,7 +75,12 @@ struct TestingViews: View {
                     .frame(maxWidth: .infinity)
                     .background(Color.black.opacity(0.4))
                     .cornerRadius(8.0)
+                Spacer()
             }.padding()
+            
+//            VStack {
+//                Text("hey").padding().frame(maxWidth: .infinity).font(.largeTitle).fontWeight(.black).background(Color.red).cornerRadius(12.0)
+//            }.padding()
         }
         .background(
             Image("macOS_background")

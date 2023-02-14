@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		510742DA2991F0A900EEE34B /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 510742D92991F0A900EEE34B /* Color.swift */; };
 		510742DC2991F41500EEE34B /* ColorTestingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 510742DB2991F41500EEE34B /* ColorTestingView.swift */; };
+		510D3279299B2E600086B3AA /* CardTitlesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 510D3278299B2E600086B3AA /* CardTitlesView.swift */; };
 		51563B31298555920051C2A0 /* Player_Rank_1App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51563B30298555920051C2A0 /* Player_Rank_1App.swift */; };
 		51563B33298555920051C2A0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51563B32298555920051C2A0 /* ContentView.swift */; };
 		51563B35298555960051C2A0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 51563B34298555960051C2A0 /* Assets.xcassets */; };
@@ -42,6 +43,7 @@
 /* Begin PBXFileReference section */
 		510742D92991F0A900EEE34B /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 		510742DB2991F41500EEE34B /* ColorTestingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorTestingView.swift; sourceTree = "<group>"; };
+		510D3278299B2E600086B3AA /* CardTitlesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardTitlesView.swift; sourceTree = "<group>"; };
 		51563B2D298555920051C2A0 /* Player Rank 1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Player Rank 1.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		51563B30298555920051C2A0 /* Player_Rank_1App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player_Rank_1App.swift; sourceTree = "<group>"; };
 		51563B32298555920051C2A0 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -91,6 +93,15 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
+		510D327A299B34250086B3AA /* Moeykens Testing */ = {
+			isa = PBXGroup;
+			children = (
+				518B46482996807300F58490 /* TestingViews.swift */,
+				510D3278299B2E600086B3AA /* CardTitlesView.swift */,
+			);
+			path = "Moeykens Testing";
+			sourceTree = "<group>";
+		};
 		51563B24298555920051C2A0 = {
 			isa = PBXGroup;
 			children = (
@@ -116,7 +127,7 @@
 			children = (
 				51563B30298555920051C2A0 /* Player_Rank_1App.swift */,
 				510742DB2991F41500EEE34B /* ColorTestingView.swift */,
-				518B46482996807300F58490 /* TestingViews.swift */,
+				510D327A299B34250086B3AA /* Moeykens Testing */,
 				51563B32298555920051C2A0 /* ContentView.swift */,
 				51EA1A432995C96400801E0A /* CustomBtnStyles.swift */,
 				5173A35A298E81ED0010B785 /* CardGameView.swift */,
@@ -290,6 +301,7 @@
 				5173A359298E7C510010B785 /* NextProjectView.swift in Sources */,
 				51EA1A442995C96400801E0A /* CustomBtnStyles.swift in Sources */,
 				510742DA2991F0A900EEE34B /* Color.swift in Sources */,
+				510D3279299B2E600086B3AA /* CardTitlesView.swift in Sources */,
 				51563B31298555920051C2A0 /* Player_Rank_1App.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -15,21 +15,9 @@ struct NextProjectView: View {
             NavigationView {
 
             List {
-                NavigationLink("A blank page") {
-                    Text("Check this page out")
-                }
-                NavigationLink("Another blank page") {
-                    Text("Another page to look at")
-                }
-                NavigationLink("A red card") {
-                    Image("red01")
-                }
-                NavigationLink("A red card") {
-                    Image("red01")
-                }
-                NavigationLink("A red card") {
-                    Image("red01")
-                }
+                NavigationLink("HStack and VStacks", destination: TestingViews())
+                NavigationLink("Cards with Titles overtop", destination: CardTitlesView())
+                
                 HStack {
                     Button ("Tap me:") {
                         tapCount += 3
@@ -38,21 +26,7 @@ struct NextProjectView: View {
                     Text("\(tapCount)")
                         .foregroundColor(Color.gray)
                 }
-                GeometryReader { geo in
-                    HStack {
-                            Button {
-                                tapCount += 4
-                            } label: {
-                                Text("Click here")
-                                    .padding()
-                            }
-                            .frame(width: geo.size.width * 0.5)
-                            .background(Color.blue)
-                            .foregroundColor(Color.white)
-                            .cornerRadius(24)
-                    }.padding(.leading, geo.size.width/4)
-                }
-            }.navigationTitle("Next project")
+            }.navigationTitle("Moeykens projects")
         }
     }
 }
