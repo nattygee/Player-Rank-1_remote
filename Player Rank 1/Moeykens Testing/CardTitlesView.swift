@@ -20,9 +20,11 @@ struct CardTitlesView: View {
                 Text("Mac Wallpapers").padding([.horizontal], 16).frame(maxWidth: .infinity, alignment: .leading).font(.title3).fontWeight(.bold).foregroundColor(Color.theme.primaryTextColor)
                 
                 //alignment using hstack + spacer
-                HStack {
-                    Text("Mac Wallpapers").padding([.horizontal], 16)
-                    Spacer()
+                HStack(spacing: 4) {
+                    Text("Mac Wallpapers").padding([.horizontal], 16).lineLimit(1)
+                    Spacer().frame(height: 4.0).background(Color.red.opacity(0.3))
+                    Spacer().frame(height: 4.0).background(Color.red.opacity(0.3))
+                    Spacer().frame(height: 4.0).background(Color.red.opacity(0.3))
                 }
                 
                 // alignment using frame width infinity + alignment
